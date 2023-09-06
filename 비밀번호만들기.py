@@ -4,7 +4,7 @@
 [규칙]
 1. http://naver.com 앞의 http:// 잘라내기
 2. 처음 만나는 점 이후 제거
-ㅊ
+3. 남은 글자 중 처음 3자리 + 글자 개수 + 글자에 포함된 'o'의 개수 + 글자에 포함된 'k'의 개수 + "!" + 자신의 이니셜
 """
 file_name = "password.txt"
 fd = open(file_name, "wt")

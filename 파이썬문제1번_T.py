@@ -12,21 +12,28 @@
 from datetime import datetime
 
 # 1. 정해진 형식으로 시간을 입력 받아서 출력하기
-# hour, min, sec = map(int,input("시간 입력 : ").split(":"))
-# if hour > 12 :
-#     hour -= 12
-#     print(f"오후{hour:02}시{min:02}분{sec:02}초")
-# else :
-#     print(f"오전{hour:02}시{min:02}분{sec:02}초")
+hour, min, sec = map(int,input("시간 입력 : ").split(":"))
+if hour > 12 :
+    hour -= 12
+    print(f"오후{hour:02}시{min:02}분{sec:02}초")
+else :
+    print(f"오전{hour:02}시{min:02}분{sec:02}초")
 
 # 2. 3개의 정수를 입력 받아 최대값과 최소값 구하기
-# a, b, c = map(int, input("정수 입력 : ").split())
-# if a> b :
-#     if a > c : print(a)
-#     else : print(c)
-# else :
-#     if b > c : print(b)
-#     else : print(c)
+a, b, c = map(int, input("정수 입력 : ").split())
+if a> b :
+    if a > c : print(a)
+    else : print(c)
+else :
+    if b > c : print(b)
+    else : print(c)
+
+    if a > c :
+        if a > b : print(b)
+        else : print(c)
+    else :
+        if b > c : print(c)
+        else : print(a)
 
 # 3. 주민등록번호를 입력 받아 생년월일, 성별, 나이 출력하기
 
@@ -56,7 +63,7 @@ print(f"나이 : {age}")
 # 4. 개수가 정해 지지 않은 여러 개의 정수를 입력 받아 합계와 평군 구하기
 score = list(map(int,input("정수 : ").split()))
 print(f"총점 : {sum(score)}")
-print(f"평군 : {sum(score)/len(score)}")
+print(f"평균 : {sum(score)/len(score)}")
 
 
 
