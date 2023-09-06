@@ -28,6 +28,13 @@ else :
     if b > c : print(b)
     else : print(c)
 
+    if a > c :
+        if a > b : print(b)
+        else : print(c)
+    else :
+        if b > c : print(c)
+        else : print(a)
+
 # 3. 주민등록번호를 입력 받아 생년월일, 성별, 나이 출력하기
 jumin = input("주민등록번호 입력 : ")  # 입력예시 : 9201081234567
 print(jumin)
