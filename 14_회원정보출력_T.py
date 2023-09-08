@@ -51,7 +51,7 @@ def print_info(name, age, gender,jobs) :
 
 # 2. 계속 반복 원할시 while문, file 생성해서 넣기
 member_info = "member.txt"
-fd = open(member_info,"wt", encoding="utf-8")  # encoding="utf-8 한글 안깨지게 해주는 코드
+fd = open(member_info,"wt", encoding="utf-8")  # encoding=”utf-8”은 한글 깨짐 방지를 위한 인코딩
 
 while True :
     name = input("이름을 입력 하세요 (종료시 quit): ")
