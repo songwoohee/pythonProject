@@ -11,8 +11,8 @@ name = input("이름을 입력 하세요 : ")
 
 while True:
     age = int(input("나이를 입력 하세요 : "))
-    if 1 < age < 199:
-        break;
+    if 1 < age < 200:
+        break
     else: print("나이를 다시 입력 하세요")
 
 
@@ -44,7 +44,7 @@ while True:
 print()
 
 # 한번에 출력
-print("="*5 + "회원정보", "="*5)
+print("="*5, "회원정보", "="*5)
 print(f"이름은 {name} 입니다.")
 print(f"나이는 {age}살 입니다.")
 print(f"성별은 {gender_str} 입니다.")
