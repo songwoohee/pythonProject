@@ -43,8 +43,8 @@ print(list_a * 3)
 print(len(list_a + list_b))
 
 # 리스트 요소 추가하기
-append() : 리스트 맨 마지막에 추가
-insert(index, 값) : 해당 인덱스에 값을 삽입
+# append() : 리스트 맨 마지막에 추가
+# insert(index, 값) : 해당 인덱스에 값을 삽입
 list_a = [1,2,3]
 list_a.append(4)
 list_a.append(5)
